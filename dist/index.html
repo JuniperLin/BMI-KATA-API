@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BMI KATA API</title>
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  
+  
+<div class="container">
+  <div class="row">
+    <div class="col-12 p-5 rounded opacity-white-bg">
+      <div class="container">
+        <div class="row">
+          <!-- MATERIAL ICONS BTN -->
+          <div class="col-1 d-flex flex-column justify-content-between align-items-center overflow-hidden rounded">
+            <button id="gp-filter-btn" class="border-0 bg-none"><span class="material-icons-outlined d-flex align-items-center fz-3">change_circle</span></button>
+            <div id="gp-filter-card" class="card p-0 hide-card">
+              <div class= "table-responsive max-h-3">
+                <table class="table">
+                  <div class="nav flex-column group-filter-list text-align-center" id="v-pills-tab" role="tablist" aria-orientation="vertical"></div>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- GROUP RANK CARD -->
+          <div class="col-3">
+            <div class="card card-hover">
+              <h3 class="card-title text-align-center text-primary" style="margin-bottom: 11px;">RANKING</h3>
+              <h1 class="group-num text-align-center text-secondary" id="group-num" style="margin-bottom: 25px;"></h1>
+              <div class="card-body img-blur bg-center-pkg position-relative rounded-circle m-auto d-flex justify-content-center align-items-center">
+                <p class="group-rank m-0 position-relative">X</p>
+              </div>
+            </div>
+          </div>
+          <!-- GROUP MEMBERS CARD -->
+          <div class="col-8 max-h">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <h3 class="card-title text-primary">GROUP MEMBERS</h3>
+                <h4 class="avg-time text-secondary"></h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive max-h-1">
+                  <table class="table text-align-center">
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Slack ID</th>
+                        <th>Ten</th>
+                        <th>Codepen</th>
+                        <th>Mins</th>
+                        <th>Secs</th>
+                      </tr>
+                    </thead>
+                    <tbody class="gp-list"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MEMBER LIST -->
+          <div class="col-12 mt-4">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center">
+                <h3 class="card-title text-primary">MEMBER LIST<span class="fz-1 text-secondary"> sort by rank</span></h3>
+                <div class="member-list-icon d-flex align-items-center pl-0">
+                  <button class="border-0 bg-none text-secondary"><span class="material-icons-round d-flex align-items-center fz-3">sort</span></button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive max-h-2">
+                  <table class="table text-align-center">
+                    <thead>
+                      <tr>
+                        <th>Rank</th>
+                        <th>Date</th>
+                        <th>Slack ID</th>
+                        <th>Group</th>
+                        <th>Youtube</th>
+                        <th>Ten</th>
+                        <th>Codepen</th>
+                        <th>Mins</th>
+                        <th>Secs</th>
+                      </tr>
+                    </thead>
+                    <tbody class="meb-list">
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
